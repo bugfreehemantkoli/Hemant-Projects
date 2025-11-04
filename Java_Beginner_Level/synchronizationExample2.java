@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Account{
-    int balance;
+    public int balance;
     
     Account(int AddAmount){
         balance = AddAmount;
@@ -14,10 +14,10 @@ class Account{
             return false;
     }
     
-    void withdraw(int amit, String name){
-        balance = balance - amit;
+    void withdraw(int userAmount, String name){
+        balance = balance - userAmount;
         System.out.println(name+" Transaction Successful.");
-        System.out.println("Total Current Balance is "+ balance + "rs.");
+        System.out.println("Total Current Balance is "+ balance + "rs.\n");
     }
 }
 
@@ -36,13 +36,14 @@ class Customer implements Runnable{
         synchronized(x1){
             
             System.out.print("Enter the amount to withdraw for "+name+" : ");
-            int amt = sc.nextInt();
+            int amount = sc.nextInt();
             
-            if(x1.isSufficientBal(amt)){
-                x1.withdraw(amt, name);
+            if(x1.isSufficientBal(amount)){
+                x1.withdraw(amount, name);
             }
             else{
                 System.out.println(name+" Insufficient Balance. Transaction Failed.");
+                System.out.println("Current Balance is "+ x1.balance + "rs.\n");
             }
         }
     }
