@@ -20,5 +20,6 @@ class JAVA_25_Largest_Number_In_Array{
 			}
 		}
 		System.out.println("In Array Largest No. is "+largest);
+		sc.close();
 	}
 }
