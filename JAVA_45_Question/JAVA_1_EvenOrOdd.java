@@ -11,6 +11,7 @@ class JAVA_1_EvenOrOdd{
 	System.out.println("It's Even Number "+n);
 	}else{
 	System.out.println("It's Odd Number "+n);
-	}
+		}
+		sc.close();
     }
 }
