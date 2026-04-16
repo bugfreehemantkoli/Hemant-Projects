@@ -32,5 +32,6 @@ class JAVA_31_Linear_Search{
 		if(!found){
 			System.out.println("Value Not Found!");
 		}
+		sc.close();
 	}
 }
