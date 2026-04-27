@@ -16,5 +16,6 @@ class JAVA_36_Fibonacc_Series{
             a = b;
             b = next;
         }
+		sc.close();
 	}
 }
