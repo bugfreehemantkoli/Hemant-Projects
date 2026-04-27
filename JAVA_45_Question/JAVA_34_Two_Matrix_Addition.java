@@ -4,8 +4,8 @@ import java.util.Scanner;
 class JAVA_34_Two_Matrix_Addition{
 	public static void main(String args[]){
 		
-		try{
-			Scanner sc = new Scanner(System.in);
+	try{
+		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Array A Size : ");
 		int a = sc.nextInt();
 		System.out.print("Enter the Array B Size : ");
@@ -69,7 +69,7 @@ class JAVA_34_Two_Matrix_Addition{
 		}else{
 			System.out.println("Invalid Input.");
 		}	
-		}catch(Exception e){
+	}catch(Exception e){
 			System.out.println("\nJava Error occurd = "+e);
 		}
 	}
